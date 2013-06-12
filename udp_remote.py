@@ -5,7 +5,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 MAX = 65535
 PORT = 1060
 
-if 2 <= len(sys.argv)) <= 3 and sys.argv[1] == 'server':
+if 2 <= len(sys.argv) <= 3 and sys.argv[1] == 'server':
     interface = sys.argv[2] if len(sys.argv) > 2 else ''
     s.bind((interface, PORT))
     print 'Listening at', s.getsockname()
